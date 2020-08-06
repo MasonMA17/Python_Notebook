@@ -127,3 +127,33 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+##########################
+dataframe.apply(np.cumsum) ###累计求和 
+
+df.apply(lambda x: x.max() - x.min()) ###求每列的极差
+
+pd.merge(dataframe1,dataframe2,on='colomn') ###merge dataframe
+
+pd.pivot_table(dataframe,values='',index='',columns='') ###pivot tables
+
+dataframe.groupby('').count()/size()... ###分类
+
+del df[''] three=df.pop[''] ###将dadaframe的列删除或者剪切到别的地方
+
+df.insert(1,'bar',df['one] ###dataframe插入一行
+
+df.assign('name'=df['']/df[''] ###dataframe assign一列
+
+df[col]    ###Indexing/selection
+
+df.loc[label]   ###select column Series
+
+Series df.iloc[loc]  ###select row by label 
+
+df[5:10]      ###select row by integer location Series###slice rows DataFrame
+
+df[bool_vec]                         ###select rows by boolean vector DataFrame 
+pd.set_option('display.max_colwidth',30)  ###设置列的宽度
+pd.set_option('display.width',40)   ###设置表的宽度
+print(pd.iloc[-20:,:12].to_string())   ###显示想看的范围
